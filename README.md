@@ -25,6 +25,7 @@ It's important to note that this article does not cover techniques for evading b
 This tool is based on the following approach: disassemble the input shellcode, analyze, and modify it with advanced techniques, including instruction substitution, junk insertion, block reordering, and more.
 
 **Warning:** ShellMorph only works with purely executable shellcode (e.g., Meterpreter or other beacons) and not with shellcode containing data sections (e.g., shellcode produced by Donut). Since ShellMorph is currently unable to bypass data sections, it ends up corrupting the shellcode.
+Additionally, note that ShellMorph is not designed to work with shellcodes that are already obfuscated or encrypted (those methods can cause runtime byte changes, leading to conflicts). It is intended to be used only with clear inputs.
 
 
 ---
